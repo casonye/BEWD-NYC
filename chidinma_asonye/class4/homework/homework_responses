@@ -1,0 +1,17 @@
+Answer the following questions:
+
+What is the method that returns a random element from an array?
+--array.sample
+
+What does .gsub(" ", "+") do on a string? 
+--It turns any spaces into a "+". 
+
+Why is that part of the code of tunr.rb?
+--You need that because a string that you but into your web browser to call the itunes API cannot habe spaces in it.
+
+In your words, explain how the loop in tunr.rb works to let the user continually keep playing new songs or requesting new song lists.
+--The first part of the code defines a method "search_itunes" that queries the itunes API and parses the response such that a snippet of a song-- the sample provided by itunes--plays
+
+--The second part of the code defines a method "list_songs_by_band" that lists all of the songs by a specific band that the user queries, again from the itunes API, which houses all the songs listed by thousands (if not more!) of bands
+
+--The "freebie" portion of the code calls both methods and plays a random song or lists songs by band depending on what the user inputs. Since we're already entered the first part of the http address necessary to query the itunes api, the user only needs to input the name of the band, and the method adds that string (less any spacessince they are turned into '+') to the end of the url string. This really is a nifty little program! :)

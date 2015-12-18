@@ -1,0 +1,9 @@
+BEWD FINAL PROJECT PROPOSAL
+
+Target audience: everyone
+
+Description of functionality: I plan to recreate Twitter
+
+3RD party service such as an API: NA
+
+Ruby Gem: I want to figure out a way to incorporate httparty. I think that I will let users post their mood using a song sample from itunes as a default option for posting

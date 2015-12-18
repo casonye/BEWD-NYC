@@ -1,0 +1,9 @@
+<ul>
+
+<% @companies.each do |company| %>
+	
+	<li><%= company.name %> <%= link_to company.name, company %></li>
+
+	<% end %>		
+
+	</ul>

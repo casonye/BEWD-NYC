@@ -1,0 +1,11 @@
+<h2> Companies in <%= params[:city] %></h2>
+
+<ul>
+
+<% @companies.each do |company| %>
+	
+	<li><%= company.name %> | city: <%= company.city %></li> 
+
+	<% end %>		
+
+	</ul>

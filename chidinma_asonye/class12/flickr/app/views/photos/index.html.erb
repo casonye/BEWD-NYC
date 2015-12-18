@@ -1,0 +1,15 @@
+<h1>Photos</h1>
+
+<ul>
+
+<% @photos.each do |photo| %>
+	<img src="<%= photo.url %>">
+	
+
+	<p><%= link_to photo.caption, photo %></p>
+	
+<% end %>	
+
+<p><%=link_to "New photo", new_photo_path %></p>
+
+</ul>
